@@ -1,0 +1,40 @@
+{
+	"required": true,
+	"package": "dev.goshi.omnimixin.internal.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"movement.LivingEntitySpeedMixin",
+		"movement.LivingEntitySprintMixin",
+		"movement.LivingEntityJumpMixin",
+		"movement.PlayerAbilitiesFlySpeedMixin",
+		"movement.EntityPushMixin",
+		"combat.LivingEntityDamageMixin",
+		"combat.LivingEntityKnockbackMixin",
+		"combat.LivingEntityArmorMixin",
+		"combat.LivingEntityStatusEffectMixin",
+		"combat.LivingEntityHealthMixin",
+		"world.AbstractBlockInteractMixin",
+		"world.AbstractBlockNeighborUpdateMixin",
+		"world.AbstractBlockRedstoneMixin",
+		"world.BlockPlaceMixin",
+		"world.BlockBreakMixin",
+		"world.PlayerBlockBreakingSpeedMixin",
+		"item.ItemStackUseMixin",
+		"item.ScreenHandlerSlotClickMixin",
+		"item.LivingEntityEquipMixin",
+		"item.BlockDroppedStacksMixin",
+		"entity.EntityTickMixin",
+		"entity.EntityDespawnMixin",
+		"entity.MobEntityCanSpawnMixin",
+		"entity.ServerWorldSpawnMixin",
+		"entity.GoalSelectorAddMixin",
+		"entity.MobEntitySetTargetMixin",
+		"sync.EntitySyncedDataMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

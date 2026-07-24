@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"package": "dev.goshi.omnimixin.internal.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"render.InGameHudMixin",
+		"render.MinecraftClientScreenMixin",
+		"render.ScreenLifecycleMixin",
+		"render.GameRendererFovMixin",
+		"render.EntityRenderMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

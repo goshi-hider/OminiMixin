@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "omnimixin",
+	"version": "${version}",
+	"name": "OmniMixin",
+	"description": "A zero-boilerplate abstraction over common Fabric mixin hooks - movement, combat, HUD/screen/camera, and more.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/omnimixin/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.goshi.OmniMixin"
+		],
+		"client": [
+			"dev.goshi.OmniMixinClient"
+		],
+		"fabric-datagen": [
+			"dev.goshi.OmniMixinDataGenerator"
+		]
+	},
+	"mixins": [
+		"omnimixin.mixins.json",
+		{
+			"config": "omnimixin.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
